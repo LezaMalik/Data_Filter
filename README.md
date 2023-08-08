@@ -4,6 +4,7 @@ A Bash script to filter data from a CSV file based on various criteria such as l
 
 
 
+
 ## Usage
 
     ./tree_filter.sh <csv_file> <-d date> [-s size] [-u user_name] [-e extension] [-h]
@@ -16,9 +17,22 @@ A Bash script to filter data from a CSV file based on various criteria such as l
 * -h, --help: Display help message.
 
 
+
+
+## Description
+
+This script takes a CSV file as input and filters its data based on the provided criteria. You can filter files by date, size, username/owner, and extension. The script utilizes command-line arguments for specifying the filters. It then displays the lines (rows) from the CSV file that match the filter criteria.
+
+The CSV file should include columns for permissions, owner, size, date, path, and filename. If the size is specified without a unit, it will be considered in bytes. If no matches are found after filtering, the script will display "No Results Found."
+
+
+
+
 ## Flow
 
 
 
 ![flow chart](./assets/task_flow.svg)
-  
+
+
+
