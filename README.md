@@ -32,6 +32,7 @@ The CSV file should include columns for permissions, owner, size, date, path, an
 
 ## Flow
 
+Here is a detail work flow of this script in the form of flow chart.
 
 
 ![flow chart](./assets/task_flow.svg)
