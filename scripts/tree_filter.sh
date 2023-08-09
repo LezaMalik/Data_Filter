@@ -1,5 +1,4 @@
 #!/bin/bash
-
 ###################################################################################################
 # tree_filter.sh - A Bash script to filter data from a CSV file based on various
 # criteria such as last modified date, file size, username, and file extension.
@@ -61,7 +60,8 @@ function display_usage {
 # Custom header with desired column names
 custom_header="                     Path                                       Filename         File Size   Last Modified Date  Username"
 header_spacing="--------------------------------------------------------------------------------------------------------------------------------"
-# Function to display verbose information (if enabled)
+
+# Function to display verbose information (if it is enabled)
 function display_verbose {
   if [ "$verbose" == "true" ]; then
     # Display the custom header with appropriate spacing
@@ -70,7 +70,7 @@ function display_verbose {
   fi
 }
 
-
+# Function to convert time
 function convert_to_timestamp {
   if [ -z "$1" ]; then
     echo "0"
@@ -81,7 +81,7 @@ function convert_to_timestamp {
 }
 
 
-
+#Function to convert to bytes
 function convert_to_bytes {
   local size="$1"
 
